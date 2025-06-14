@@ -45,11 +45,11 @@ const LoginPage = ({ handleLogin, setCurrentScreen }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-hero h-[400px] min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Sign in to your account</h2>
-          <p className="mt-2 text-gray-600">Choose your account type</p>
+          <h2 className="text-3xl font-bold text-[#66FCF1]">Sign in to your account</h2>
+          <p className="mt-2 text-[#45A29E]">Choose your account type</p>
         </div>
         
         <div className="space-y-6">
@@ -65,16 +65,19 @@ const LoginPage = ({ handleLogin, setCurrentScreen }) => {
           <div className="space-y-4">
             <FormInput
               label="Email Address"
+              
               type="email"
               value={loginForm.email}
               onChange={handleLoginEmailChange}
               error={loginFormErrors.email}
               placeholder="Enter your email"
+              
               required
               disabled={isLoginSubmitting}
             />
             
-            <FormInput
+            <FormInput 
+          
               label="Password"
               type="password"
               value={loginForm.password}
@@ -93,7 +96,7 @@ const LoginPage = ({ handleLogin, setCurrentScreen }) => {
               className={`w-full py-3 rounded-lg font-semibold transition duration-200 ${
                 isLoginSubmitting
                   ? 'bg-gray-400 cursor-not-allowed text-white'
-                  : 'bg-blue-600 hover:bg-blue-700 text-white'
+                  : 'bg-[#7F5AF0] hover:bg-blue-700 text-white'
               }`}
             >
               {isLoginSubmitting ? (
@@ -112,7 +115,7 @@ const LoginPage = ({ handleLogin, setCurrentScreen }) => {
               className={`w-full py-3 rounded-lg font-semibold transition duration-200 ${
                 isLoginSubmitting
                   ? 'bg-gray-400 cursor-not-allowed text-white'
-                  : 'bg-green-600 hover:bg-green-700 text-white'
+                  : 'bg-[#FF6B6B] hover:bg-green-700 text-white'
               }`}
             >
               {isLoginSubmitting ? (
@@ -127,11 +130,11 @@ const LoginPage = ({ handleLogin, setCurrentScreen }) => {
           </div>
           
           <div className="text-center">
-            <p className="text-gray-600">
+            <p className="text-[#45A29E]">
               Don't have an account?{' '}
               <button 
                 onClick={() => setCurrentScreen('signup')}
-                className="text-blue-600 hover:text-blue-800 font-semibold"
+                className="text-[#A3E635] hover:text-blue-800 font-semibold"
                 disabled={isLoginSubmitting}
               >
                 Sign up

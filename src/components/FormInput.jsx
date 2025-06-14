@@ -27,7 +27,7 @@ const FormInput = React.memo(({
   
   return (
     <div className="space-y-1">
-      <label className="block text-sm font-medium text-gray-700">
+      <label className="block text-sm font-semibold text-[#C9D6DF]">
         {label} {required && <span className="text-red-500">*</span>}
       </label>
       <input
@@ -36,7 +36,10 @@ const FormInput = React.memo(({
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
         disabled={disabled}
-        className={`w-full px-3 py-3 border rounded-lg focus:outline-none focus:ring-2 transition duration-200 ${
+        className={`w-full px-3 py-3 border rounded-lg focus:outline-none focus:ring-2 transition duration-200 
+          placeholder:text-gray-500
+          text-[#66FCF1]
+          ${
           error 
             ? 'border-red-300 focus:ring-red-500 bg-red-50' 
             : 'border-gray-300 focus:ring-blue-500'

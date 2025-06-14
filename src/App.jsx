@@ -19,6 +19,8 @@ import AdminDashboard from './pages/admin/AdminDashboard';
 import ManageJobsPage from './pages/admin/ManageJobsPage';
 import ViewApplicationsPage from './pages/admin/ViewApplicationsPage';
 
+
+
 const JobPortalApp = () => {
   // Main app state
   const [currentScreen, setCurrentScreen] = useState('home');
@@ -30,15 +32,16 @@ const JobPortalApp = () => {
   const [jobs, setJobs] = useState([
     {
       id: 1,
-      title: 'Frontend Developer',
-      description: 'Build amazing user interfaces with React and modern web technologies. Work with cross-functional teams to deliver high-quality products.',
-      requirements: 'React, JavaScript, CSS, HTML, Git, REST APIs',
-      location: 'Kochi, Kerala',
-      salary: '₹5,00,000 - ₹8,00,000',
-      jobType: 'Full-time',
-      company: 'Tech Solutions Inc.',
-      postedDate: '2025-06-08',
+      title: 'Digital Marketing Intern',
+      description: 'Support the digital team in social media content, campaign execution, and reporting. Great learning opportunity for freshers interested in marketing.',
+      requirements: 'SEO, Google Ads, Canva',
+      location: 'Remote',
+      salary: '₹10,000/month (Stipend)',
+      jobType: 'Internship',
+      company: 'SocialFlare Agency',
+      postedDate: '2025-06-06',
       isActive: true
+      
     },
     {
       id: 2,
@@ -75,7 +78,51 @@ const JobPortalApp = () => {
       company: 'Innovation Labs',
       postedDate: '2025-06-06',
       isActive: true
-    }
+    },
+{
+  id: 5,
+      title: 'Backend Developer',
+      description: 'Work on both frontend and backend development. Build complete web applications from scratch.',
+      requirements: 'Node.js, MongoDB, REST APIs',
+      location: 'Bengaluru, Karnataka',
+      salary: '₹7,00,000 - ₹12,00,000',
+      jobType: 'Full-time',
+      company: 'DevCore Labs',
+      postedDate: '2025-06-06',
+      isActive: true
+
+
+},
+
+{
+  id: 6,
+      title: 'Data Analyst',
+      description: 'Analyze and interpret data to support business decisions. Must be good with SQL and Excel. Experience with Python for analysis and Tableau for dashboards preferred.',
+      requirements: 'Excel, SQL, Tableau, Python',
+      location: 'Kochi, Kerala',
+      salary: '₹5,50,000 - ₹7,00,000',
+      jobType: 'Full-time',
+      company: 'Insight Metrics Pvt. Ltd.',
+      postedDate: '2025-06-06',
+      isActive: true
+
+
+},
+{
+  id: 7,
+      title: 'Frontend Developer',
+      description: 'Build amazing user interfaces with React and modern web technologies. Work with cross-functional teams to deliver high-quality products.',
+      requirements: 'React, JavaScript, CSS, HTML, Git, REST APIs',
+      location: 'Kochi, Kerala',
+      salary: '₹5,00,000 - ₹8,00,000',
+      jobType: 'Full-time',
+      company: 'Tech Solutions Inc.',
+      postedDate: '2025-06-08',
+      isActive: true
+
+
+},
+
   ]);
 
   const [users] = useState([
@@ -318,7 +365,10 @@ const JobPortalApp = () => {
         setCurrentScreen={setCurrentScreen}
       />
       {renderCurrentScreen()}
+      
+
     </div>
+    
   );
 };
 

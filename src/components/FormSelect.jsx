@@ -17,7 +17,7 @@ const FormSelect = React.memo(({
     <select
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className={`w-full px-3 py-3 border rounded-lg focus:outline-none focus:ring-2 transition duration-200 ${
+      className={`w-full px-3 py-3 border text-gray-500 rounded-lg focus:outline-none focus:ring-2 transition duration-200 ${
         error 
           ? 'border-red-300 focus:ring-red-500 bg-red-50' 
           : 'border-gray-300 focus:ring-blue-500'
