@@ -1,6 +1,9 @@
 // App.jsx - Main Application Component
 import React, { useState, useCallback } from 'react';
 
+
+
+
 // Import Components
 import Navbar from './components/Navbar';
 
@@ -18,6 +21,7 @@ import AppliedJobsPage from './pages/user/AppliedJobsPage';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import ManageJobsPage from './pages/admin/ManageJobsPage';
 import ViewApplicationsPage from './pages/admin/ViewApplicationsPage';
+
 
 
 
@@ -363,6 +367,7 @@ const JobPortalApp = () => {
         userRole={userRole}
         onLogout={handleLogout}
         setCurrentScreen={setCurrentScreen}
+        
       />
       {renderCurrentScreen()}
       
