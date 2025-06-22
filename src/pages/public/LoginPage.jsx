@@ -96,7 +96,7 @@ const LoginPage = ({ handleLogin, setCurrentScreen }) => {
               className={`w-full py-3 rounded-lg font-semibold transition duration-200 ${
                 isLoginSubmitting
                   ? 'bg-gray-400 cursor-not-allowed text-white'
-                  : 'bg-[#7F5AF0] hover:bg-blue-700 text-white'
+                  : 'bg-[#7F5AF0] hover:bg-lime-500 text-white'
               }`}
             >
               {isLoginSubmitting ? (
@@ -115,7 +115,7 @@ const LoginPage = ({ handleLogin, setCurrentScreen }) => {
               className={`w-full py-3 rounded-lg font-semibold transition duration-200 ${
                 isLoginSubmitting
                   ? 'bg-gray-400 cursor-not-allowed text-white'
-                  : 'bg-[#FF6B6B] hover:bg-green-700 text-white'
+                  : 'bg-[#FF6B6B] hover:bg-lime-500 text-white'
               }`}
             >
               {isLoginSubmitting ? (
@@ -134,7 +134,7 @@ const LoginPage = ({ handleLogin, setCurrentScreen }) => {
               Don't have an account?{' '}
               <button 
                 onClick={() => setCurrentScreen('signup')}
-                className="text-[#A3E635] hover:text-blue-800 font-semibold"
+                className="text-[#A3E635] hover:text-red-600 font-semibold"
                 disabled={isLoginSubmitting}
               >
                 Sign up

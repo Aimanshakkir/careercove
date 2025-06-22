@@ -143,7 +143,7 @@ const RegisterPage = ({ handleSignup, setCurrentScreen, users }) => {
             className={`w-full py-3 rounded-lg font-semibold transition duration-200 ${
               isSignupSubmitting
                 ? 'bg-gray-400 cursor-not-allowed text-white'
-                : 'bg-[#7F5AF0] hover:bg-blue-700 text-white'
+                : 'bg-[#7F5AF0] hover:bg-red-500 text-white'
             }`}
           >
             {isSignupSubmitting ? (
@@ -157,11 +157,11 @@ const RegisterPage = ({ handleSignup, setCurrentScreen, users }) => {
           </button>
           
           <div className="text-center">
-            <p className="text-gray-600">
+            <p className="text-gray-500">
               Already have an account?{' '}
               <button 
                 onClick={() => setCurrentScreen('login')}
-                className="text-blue-600 hover:text-blue-800 font-semibold"
+                className="text-green-400 hover:text-red-800 font-semibold"
                 disabled={isSignupSubmitting}
               >
                 Sign in

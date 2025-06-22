@@ -19,6 +19,10 @@
   height: 100%;
   z-index: -10;
 }
+.glow {
+  text-shadow: 0 0 8px #66FCF1, 0 0 16px #45A29E;
+}
+
 
 
 body {

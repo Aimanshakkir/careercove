@@ -1,9 +1,6 @@
 // App.jsx - Main Application Component
 import React, { useState, useCallback } from 'react';
 
-
-
-
 // Import Components
 import Navbar from './components/Navbar';
 
@@ -130,9 +127,9 @@ const JobPortalApp = () => {
   ]);
 
   const [users] = useState([
-    { id: 1, name: 'John Doe', email: 'john@example.com', phone: '+91 9876543210' },
-    { id: 2, name: 'Jane Smith', email: 'jane@example.com', phone: '+91 9876543211' },
-    { id: 3, name: 'Mike Johnson', email: 'mike@example.com', phone: '+91 9876543212' }
+    { id: 1, name: 'Aiman', email: 'Aiman@example.com', phone: '+91 6282292784' },
+    { id: 2, name: 'Ajsal', email: 'ajsal@example.com', phone: '+91 8075631859' },
+    { id: 3, name: 'Ameen', email: 'Ameen@example.com', phone: '+91 9961665147' }
   ]);
 
   const [applications, setApplications] = useState([
@@ -141,8 +138,8 @@ const JobPortalApp = () => {
       jobId: 1,
       userId: 1,
       jobTitle: 'Frontend Developer',
-      userName: 'John Doe',
-      userEmail: 'john@example.com',
+      userName: 'Aiman',
+      userEmail: 'aiman@example.com',
       appliedDate: '2025-06-05',
       status: 'pending'
     },
@@ -151,11 +148,32 @@ const JobPortalApp = () => {
       jobId: 3,
       userId: 2,
       jobTitle: 'UI/UX Designer',
-      userName: 'Jane Smith',
-      userEmail: 'jane@example.com',
+      userName: 'ajsal',
+      userEmail: 'ajsal@example.com',
       appliedDate: '2025-06-06',
       status: 'reviewed'
+    },
+{
+      id: 3,
+      jobId: 4,
+      userId: 2,
+      jobTitle: 'Data Analyst',
+      userName: 'Ameen',
+      userEmail: 'laluameen@example.com',
+      appliedDate: '2025-06-06',
+      status: 'pending'
+    },
+    {
+      id: 4,
+      jobId: 5,
+      userId: 2,
+      jobTitle: 'Backend Developer',
+      userName: 'Hamdan sias',
+      userEmail: 'hamdan@example.com',
+      appliedDate: '2025-06-06',
+      status: 'rejected'
     }
+
   ]);
 
   // Search and filter states
